@@ -1,0 +1,282 @@
+/* Common Css Start */
+h1,h2,h3,h4,h5,h6,p,
+ul,ol,li {
+    margin: 0;
+}
+a,a:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+ul,ol {
+    list-style-type: none;
+}
+input, 
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+:root{
+    --primary-font:"Poppins", sans-serif;
+    --secondary-font:"PT Sans", sans-serif;
+}
+body {
+    font-family: var(--primary-font);
+}
+h1,h2,h3{
+    font-family: var(--secondary-font);
+}
+.button{
+    color: #353535;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%; /* 36px */
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 6px 11px;
+    margin-right: 10px;
+}
+.button:hover{
+    color: #FC0;
+    background-color: #000000;
+}
+p{
+    color: #353535;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 36px */
+    padding: 26px 0;
+}
+/* Common Css End */
+
+/* Nav Css start */
+#primary-nav ul li a{
+    color: black;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+}
+#primary-nav #menu ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    background: #353535;
+    transition: .4s;
+}
+#primary-nav #menu ul li a:hover::after{
+    width: 100%;
+    left: 0;
+}
+/* Nav Css end */
+
+/* Banner Css start */
+#banner{
+    padding: 50px;
+}
+#banner .sec-1{
+    padding: 90px 0;
+}
+#banner h6{
+    color: #353535;
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#banner h1{
+    color: #353535;
+    font-family: var(--secondary-font);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#banner h5{
+    padding: 50px 0;
+    color: #353535;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%; /* 39.6px */
+}
+#banner a{
+    color: #353535;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%; /* 36px */
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px 11px;
+    margin-right: 10px;
+}
+#banner a:hover{
+    border: none;
+    transition: 0.5s;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #FC0;
+}
+#banner ul li a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #ffffff;
+}
+@media only screen and (max-width:575px) {
+    #banner{
+        width: 100%;
+    }
+    #banner h1{
+        font-size: 34px;
+        letter-spacing: 0;
+    }
+    #banner p{
+        font-size: 15px;
+    }
+}
+/* Banner Css end */
+
+/* About Css start */
+#about{
+    background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+}
+#about h2{
+    color: #353535;
+    font-family: var(--secondary-font);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#about .a-bottom{
+    position: relative;
+}
+#about .about-bottom{
+    position: absolute;
+    margin-top: -12px;
+}
+/* About Css end */
+
+/* Info Css start*/
+#info{
+    margin: 80px 0;
+}
+#info .cards{
+    width: 400px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+}
+#info .cards img{
+    margin-top: 30px;
+} 
+#info .cards h5{
+    color: #353535;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 39.6px */
+} 
+/* Info Css end */
+
+/* Branding Css start */
+#brand .container{
+    padding-top: 100px;
+    border-radius: 30px;
+    background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+}
+#brand .brand-img{
+    position: relative;
+}
+#brand .shape-top{
+    position: absolute;
+    top: -25px;
+    right: 50px;
+}
+#brand .b-icon{
+    padding-top: 10px;
+    transform: translateY(-35px);
+}
+#brand .brand-image{
+    transform: translateY(20px);
+    bottom: -10px;
+}
+/* Branding Css end*/
+
+/* Help Css start*/
+#help{
+    padding: 100px 0;
+}
+#help ul li .icon1, .icon2, .icon3{
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    line-height: 58px;
+    border-radius: 50%;
+    margin: 20px 20px;
+}
+#help .icon1{
+    background-color: #55852F;    
+}
+#help .icon2{
+    background-color: #FEDC2A;
+}
+#help .icon3{
+    background-color: #FF8D3A;
+}
+#help ul li{
+    margin: 20px 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+}
+#help ul li .text{
+    margin: 20px 0;
+    color: #353535;
+    font-size: 18px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 32.4px */
+}
+#help ul li .text small{
+    color: #353535;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%; /* 21.6px */
+}
+#help h2{
+    color: #353535;
+    text-align: right;
+    font-family: var(--secondary-font);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#help p{
+    color: #353535;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%; /* 25.2px */
+}
+/* Help Css end*/
